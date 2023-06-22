@@ -1,0 +1,5 @@
+Buenas prácticas API Rest: https://youtu.be/t_L88F3lTdQ  
+
+Estructura API Monolítica: https://youtu.be/lf-L9IEdo9E
+
+SOLID: https://youtu.be/2X50sKeBAcQ

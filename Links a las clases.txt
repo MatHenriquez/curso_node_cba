@@ -16,7 +16,7 @@ Video Clase 7: https://www.youtube.com/watch?v=0o2p5XUis8s&ab_channel=SomoslaSEU
 
 Video Clase 8: https://www.youtube.com/watch?v=gWi213Lu6-Y&ab_channel=SomoslaSEU
 
-Video Clase 8: https://www.youtube.com/watch?v=6nZAaInSGPU&ab_channel=SomoslaSEU
+Video Clase 9: https://www.youtube.com/watch?v=6nZAaInSGPU&ab_channel=SomoslaSEU
 
 aws ecr create-repository --repository-name api-productos --region us-east-1
 

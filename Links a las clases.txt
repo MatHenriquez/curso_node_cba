@@ -17,3 +17,13 @@ Video Clase 7: https://www.youtube.com/watch?v=0o2p5XUis8s&ab_channel=SomoslaSEU
 Video Clase 8: https://www.youtube.com/watch?v=gWi213Lu6-Y&ab_channel=SomoslaSEU
 
 Video Clase 8: https://www.youtube.com/watch?v=6nZAaInSGPU&ab_channel=SomoslaSEU
+
+aws ecr create-repository --repository-name api-productos --region us-east-1
+
+aws cloudformation create-stack --template-body file://infraestructure/vpc.yml --stack-name api-productos-2-docker-ecs-vpc
+
+aws cloudformation create-stack --template-body file://infraestructure/app-cluster.yml --stack-name api-productos-2-docker-ecs-cluster
+
+aws cloudformation create-stack --template-body file://infraestructure/api.yml --stack-name api-productos-2-docker-ecs-api
+
+aws cloudformation describe-stacks --stack-name api-productos-docker-2-ecs-api

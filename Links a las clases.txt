@@ -18,6 +18,8 @@ Video Clase 8: https://www.youtube.com/watch?v=gWi213Lu6-Y&ab_channel=SomoslaSEU
 
 Video Clase 9: https://www.youtube.com/watch?v=6nZAaInSGPU&ab_channel=SomoslaSEU
 
+Video Clase 10: https://www.youtube.com/watch?v=z9YlbsBtCdE&ab_channel=SomoslaSEU
+
 aws ecr create-repository --repository-name api-productos --region us-east-1
 
 aws cloudformation create-stack --template-body file://infraestructure/vpc.yml --stack-name api-productos-2-docker-ecs-vpc

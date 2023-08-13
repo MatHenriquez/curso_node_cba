@@ -24,7 +24,7 @@ const usersRouter = require("./routes/user");
 //Configuramos el middleware de autenticacion
 app.use("/api/libros", autenticacion, librosRouter);
 
-app.use("/api/users", autenticacion, usersRouter);
+app.use("/api/users", usersRouter);
 
 app.use(errorHandler);
 

@@ -17,11 +17,14 @@ const autenticacion = auth({
 const app = express();
 app.use(express.json());
 
-// Importamos el Router de Libros
-const librosRouter = require("./routes/libros");
+// Importamos el Router de Libros y usuarios
+const librosRouter = require("./routes/libros");  
+const usersRouter = require("./routes/users");
 
 //Configuramos el middleware de autenticacion
-app.use("/api/libros", autenticacion,  librosRouter);
+app.use("/api/libros", autenticacion, librosRouter);
+
+app.use("/api/users", autenticacion, usersRouter);
 
 app.use(errorHandler);
 

@@ -1,17 +1,17 @@
 const express = require("express");
 
-const { auth } = require("express-oauth2-jwt-bearer");
+// const { auth } = require("express-oauth2-jwt-bearer");
 const errorHandler = require("./middlewares/errorHandler");
 
 
-require('dotenv').config();
+// require('dotenv').config();
 
 // Configuracion Middleware con el Servidor de Autorización 
-const autenticacion = auth({
-  audience: process.env.OAUTH_AUDIENCE,
-  issuerBaseURL: process.env.OAUTH_URL,
-  tokenSigningAlg: "RS256",
-});
+// const autenticacion = auth({
+//   audience: process.env.OAUTH_AUDIENCE,
+//   issuerBaseURL: process.env.OAUTH_URL,
+//   tokenSigningAlg: "RS256",
+// });
 
 
 const app = express();
@@ -22,7 +22,7 @@ const librosRouter = require("./routes/libros");
 const usersRouter = require("./routes/user");
 
 //Configuramos el middleware de autenticacion
-app.use("/api/libros", autenticacion, librosRouter);
+app.use("/api/libros", librosRouter);
 
 app.use("/api/users", usersRouter);
 
